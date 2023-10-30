@@ -1,1 +1,31 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Information</title>
+</head>
+<body>
+    <label for="destinations">Select a destination:</label>
+    <select id="destinations">
+        <option value="destination1">Destination 1</option>
+        <option value="destination2">Destination 2</option>
+        <!-- Add more options for different destinations -->
+    </select>
+
+    <div id="flightInfo">
+        <!-- Flight information will be displayed here -->
+    </div>
+
+    <script>
+        // JavaScript to fetch flight data based on the selected destination and update the flightInfo div
+        const dropdown = document.getElementById('destinations');
+        const flightInfo = document.getElementById('flightInfo');
+
+        dropdown.addEventListener('change', function() {
+            const selectedDestination = dropdown.value;
+            // Make an AJAX request to the server to get flight information based on the selected destination
+            // Update the flightInfo div with the retrieved data
+            // This requires backend implementation and proper handling
+        });
+    </script>
+</body>
+</html>
