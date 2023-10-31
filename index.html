@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Flight Information</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Flight Agency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <label for="destinations">Select a destination:</label>
-    <select id="destinations">
-        <option value="destination1">Destination 1</option>
-        <option value="destination2">Destination 2</option>
-        <!-- Add more options for different destinations -->
-    </select>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Travel Flight Agency</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="flightInfo">
-        <!-- Flight information will be displayed here -->
-    </div>
+    <section class="hero">
+        <h2>Explore the World</h2>
+        <p>Find your perfect flight and discover new destinations.</p>
+        <a href="#" class="btn">Book Now</a>
+    </section>
 
-    <script>
-        // JavaScript to fetch flight data based on the selected destination and update the flightInfo div
-        const dropdown = document.getElementById('destinations');
-        const flightInfo = document.getElementById('flightInfo');
+    <section class="featured-flights">
+        <h2>Featured Flights</h2>
+        <!-- Add flight listings here -->
+    </section>
 
-        dropdown.addEventListener('change', function() {
-            const selectedDestination = dropdown.value;
-            // Make an AJAX request to the server to get flight information based on the selected destination
-            // Update the flightInfo div with the retrieved data
-            // This requires backend implementation and proper handling
-        });
-    </script>
+    <footer>
+        <p>&copy; 2023 Travel Flight Agency</p>
+    </footer>
 </body>
+
 </html>
