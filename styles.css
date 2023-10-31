@@ -1,0 +1,78 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the hero section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('background.jpg'); /* Add your background image */
+    background-size: cover;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #ff9900;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style the featured flights section */
+.featured-flights {
+    padding: 50px 0;
+}
+
+.featured-flights h2 {
+    text-align: center;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
